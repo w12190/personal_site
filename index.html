@@ -1,1 +1,90 @@
-<h1> Lorem Ipsum </h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wayne Chen's Personal Site</title>
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0px;
+				margin-left: 50px;
+				background-color:white;
+				overflow: hidden;
+				font-size: 33px;
+				padding: 10px;
+				padding-bottom: 5px;
+			}
+			li {
+				float: left;
+				width: 33.33%;
+				font-family: Futura;
+			}
+			a {
+				text-decoration: none;
+			}
+			.navbar-links { 
+				text-decoration: none;
+				display: block;
+				padding: 8px;
+				background-color: white;
+				display: inline;
+				color: rgb(134, 134, 134);
+			}
+			.navbar-big {
+				font-size: 45px;
+				font-weight: 500;
+				font: arial;
+			}
+			.navbar-small {
+				padding-top: 11px;
+				font-weight: 450;
+			}
+			#photo {
+				max-width: 100%;
+			}
+			#message-input {
+				height: 90px;
+			}
+			form {
+				margin-left: 0.5%;
+			}
+			#submit-button {
+				margin-left: 32%;
+			}
+			#resume-link {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="navbar" class="navbar-class">
+			<hr>
+			<ul class="links">
+				<li class="navbar-big" id="wayne"><a class="navbar-links" href="https://w12190.github.io/personal_site/">Wayne Chen</a></li>
+				<li class="navbar-small"><a class="navbar-links" href="#hr-aboutme">About me</a></li>
+				<li class="navbar-small"><a class="navbar-links" href="#hr-contact">Contact</a></li>
+			</ul>
+			<ul class="hidden-links hidden"></ul>
+		</nav>
+		<img id="photo" src="https://i.imgur.com/qm4Y59q.jpg">
+		<hr id="hr-aboutme">
+		<p>
+			Short bio here
+		</p>		
+		<br><br>
+		<a href="https://github.com/w12190/personal_site/blob/master/resume.pdf" id="resume-link">Here</a> is my resume, updated June 2020.
+
+		<hr id="hr-contact">
+		<h3>Email Me</h3>
+		<form action="mailto:wayne12190@gmail.com" method="post" enctype="text/plain">
+			Name<br>
+			<input type="text" name="name"><br>
+			Email <br>
+			<input type="text" name="email"><br>
+			Message <br>
+			<input type="text" name="message" size="85" id="message-input"> <br><br>
+			<input type="submit" value="Send" id="submit-button">
+		</form>
+	</body>
+</html>
