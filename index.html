@@ -54,7 +54,16 @@
 			}
 			#resume-link {
 				text-decoration: underline;
-			}
+            }
+            p {
+                margin-left: 1%;
+                font-family: Helvetica;
+                font-size: 17px;
+                color: rgb(44, 44, 44);
+            }
+            h2 {
+                font-family: Helvetica;
+            }
 		</style>
 	</head>
 	<body>
@@ -68,15 +77,24 @@
 			<ul class="hidden-links hidden"></ul>
 		</nav>
 		<img id="photo" src="https://i.imgur.com/qm4Y59q.jpg">
-		<hr id="hr-aboutme">
-		<p>
-			Short bio here
-		</p>		
-		<br><br>
-		<a href="https://github.com/w12190/personal_site/blob/master/resume.pdf" id="resume-link">Here</a> is my resume, updated June 2020.
+        <hr id="hr-aboutme">
+        <h2>About Me</h2>
+		<p id="bio">
+            Hello! My name is Wayne, and I'm currently studying with Rithm School to become a software developer. <br><br>
+            
+            I was born in Taiwan, grew up in the Bay Area, and finished my CS degree at Johns Hopkins. I spent the past few years learning how to build business systems 
+            in the digital marketing space. While I learned a great deal, I'm ready to get back to my roots. In the near future I hope to join a team of passionate software developers
+            and bring projects to life.<br><br>
+        
+            In my free time, I like to play board games and read personal development books. Ray Dalio's Principles is currently on top of my pile, and I'm excited for the next one underneath.<br><br>
+            
+            <a href="https://github.com/w12190/personal_site/blob/master/resume.pdf" id="resume-link">Here</a> is my resume, updated June 2020.
+        </p>
 
 		<hr id="hr-contact">
-		<h3>Email Me</h3>
+        <h2>Email Me</h2>
+        <p>
+        Want to recommend a book? Work on a project together? Feel free to shoot me a message below.<br>
 		<form action="mailto:wayne12190@gmail.com" method="post" enctype="text/plain">
 			Name<br>
 			<input type="text" name="name"><br>
@@ -85,6 +103,7 @@
 			Message <br>
 			<input type="text" name="message" size="85" id="message-input"> <br><br>
 			<input type="submit" value="Send" id="submit-button">
-		</form>
+        </form>
+        </p>
 	</body>
 </html>
